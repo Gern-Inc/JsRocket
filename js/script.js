@@ -1,3 +1,17 @@
+var doCoolStuff = function () {
+	var className = document.getElementById('cool').className;
+	if(className == 'cool'){
+		document.getElementById('cool').className = "cool red";
+	}else{
+		document.getElementById('cool').className = "cool";
+}
+
+	}
+	
+var myName = function () {
+
+}
+
 var car = {
 	make: 'Saturn',
 	type: 'Ion',
