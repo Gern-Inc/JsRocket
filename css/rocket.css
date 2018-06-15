@@ -32,11 +32,11 @@
 	width: 20px;
 	height: 100px;
 	background-color: red;
+	transition: bottom 10000ms;
 }
 
-.rocket.flying{
-	bottom: 100%;
-	transition: bottom 10000ms;
+body.bState3 .rocket{
+	bottom: 1000px;
 }
 
 .state1,
