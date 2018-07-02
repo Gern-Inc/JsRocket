@@ -1,5 +1,12 @@
 var timer = null; 
 var count = 10;
+var coin = function(randNum){
+	if(randNum > 5) {
+				changeState(4);
+			} else {
+				changeState(5);
+			}
+};
 var changeState = function (state) {
 	document.body.className = 'bState' + state;
 	clearInterval(timer);
@@ -15,15 +22,7 @@ var changeState = function (state) {
 		},500);
 	}
 	else if(state == 3){
-		var success = setTimeout(funtion()
-		{
-			var randNum = Math.round(Math.random()*10);
-			if(randNum > 5)
-			{
-				changeState(4);
-			}else{
-				changeState(5);
-			}
-		},2000);
+		var randNum = Math.round(Math.random()*10);
+		var success = setTimeout(coin(randNum), 2000);
 	};
-}
+};
