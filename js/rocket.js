@@ -1,5 +1,6 @@
 var timer = null; 
 var count = 10;
+//Work around function
 var coin = function(randNum){
 	if(randNum > 5) {
 				changeState(4);
