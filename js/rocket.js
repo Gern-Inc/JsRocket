@@ -22,6 +22,7 @@ var changeState = function (state) {
 			};
 		},500);
 	}
+	//Test comment
 	else if(state == 3){
 		var randNum = Math.round(Math.random()*10);
 		var success = setTimeout(coin(randNum), 2000);
