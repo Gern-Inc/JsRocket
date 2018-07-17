@@ -9,7 +9,7 @@ var coin = function(randNum){
 				changeState(5);
 			}
 };
-//another change
+//another change Woot!
 var changeState = function (state) {
 	document.body.className = 'bState' + state;
 	clearInterval(timer);
