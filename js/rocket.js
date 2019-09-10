@@ -10,9 +10,14 @@ var coin = function(randNum){
 			}
 };
 //another change Woot!
+/*
+Changes the state of the object
+Inputs: state to be switched to
+Outputs: null
+*/
 var changeState = function (state) {
 	document.body.className = 'bState' + state;
-	clearInterval(timer);
+	clearInterval(timer); //Clears the interval for the timer
 	//if then statement
 	if(state==2){
 		timer = setInterval(function()
